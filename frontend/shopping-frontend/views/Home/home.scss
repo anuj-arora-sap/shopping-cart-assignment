@@ -1,0 +1,53 @@
+@import '../../styles/colors';
+
+.Plp-Container {
+    .Prduct-Listing-Detail {
+        padding-left: 6%;
+        padding-right: 6%;
+        .Filter-DropDown {
+            display: none;
+        }
+        .Product-List {
+            display: flex;
+            .Product-Filter {
+                width: 20%;
+                background-color: $grey-color;
+                .Filter-Options {
+                    color:$dark-grey-color;
+                    border: 0;
+                    width: 100%;
+                    background-color: $grey-color;
+                    padding: 10px;
+                    text-align: left;
+                    border-bottom: 1px solid $dark-grey-color;
+                }
+            }
+            .List {
+                width: 80%;
+                justify-content: space-between;
+                padding-left: 2%;
+                // padding-right: 2%;
+            }
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .Plp-Container {
+        .Prduct-Listing-Detail {
+            padding: 0px;
+            .Filter-DropDown {
+                display: block;
+            }
+            .Product-List {
+                .Product-Filter {
+                    display: none;
+                }
+                .List {
+                    width: 100%;
+                    padding-right: 2%;
+                }
+            }
+        }
+    }
+}

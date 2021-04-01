@@ -1,0 +1,15 @@
+.Logo-Container {
+    padding: 12px 0px 4px 0px;
+    .Logo-Image {
+        height: 60px;
+    }
+}
+
+@media (max-width: 767px) { 
+    .Logo-Container {
+        padding: 6px 0px 3px 0px;
+        .Logo-Image {
+            height: 35px;
+        }
+    }
+}
