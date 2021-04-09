@@ -2,9 +2,9 @@ import Icon from '../../Icon';
 import './cart.scss';
 
 
-function Cart() {
+function Cart({handleCartClick}) {
     return (
-        <div className="Cart Flex">
+        <div className="Cart Flex" onClick={handleCartClick}>
             <div className="Image-Wrapper">
                 <Icon name="cart" />
             </div>

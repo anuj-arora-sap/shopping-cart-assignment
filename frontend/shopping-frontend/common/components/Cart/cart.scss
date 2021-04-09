@@ -5,6 +5,7 @@
     background-color: $grey-color;
     // margin-top: 40px;
     position: absolute;
+    cursor: pointer;
     right: 6%;
     align-items: center;
     bottom: 0px;
@@ -32,5 +33,11 @@
             width: 25px;
             }
         }
+    }
+}
+
+@media (max-width: 1023px) {
+    .Cart {
+        right: 0px;
     }
 }

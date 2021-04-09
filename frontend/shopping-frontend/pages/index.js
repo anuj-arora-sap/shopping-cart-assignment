@@ -1,6 +1,6 @@
-import Home1 from '../views/Home';
+import Login from '../views/Login';
 
-const Home = () => null;
-Home.View = Home1;
+const LoginPage = () => null;
+LoginPage.View = Login;
 
-export default Home;
+export default LoginPage;
