@@ -1,0 +1,21 @@
+@import '../../../styles/colors';
+@import '../../../styles/functions';
+
+.Select-Container {
+    position: relative;
+    &.styled-select select {
+        // -moz-appearance:none; /* Firefox */
+        // -webkit-appearance:none; /* Safari and Chrome */
+        // appearance:none;
+    }
+    .Select {
+        width: 100%;
+        padding: space(1);
+        margin-top: space(2);
+        background-color: $dark-pink-color;
+        border: none;
+        color: #fff;
+        font-size: 0.85rem;
+        font-weight: bold;
+    }
+}

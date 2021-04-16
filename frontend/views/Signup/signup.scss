@@ -1,0 +1,44 @@
+@import '../../styles/colors';
+@import '../../styles/functions';
+
+.Signup-Container {
+    .Signup-Wrapper {
+        padding: 0 space(0.6, true);
+        .Title {
+            padding: space(5) space(3) space(3) space(9);
+            width: 40%;
+            h1 {
+                margin: 0px;
+                font-size: 2.2rem;
+            }
+            p {
+                margin-top: 10px;
+                font-size: 0.70rem;
+            }
+        }
+        .Signup-Form {
+            width: 30%;
+            padding: space(1);
+
+            .Field {
+                padding: space(2) space(0);
+            }
+            button {
+                background-color: $dark-pink-color;
+                border: none;
+                width: 100%;
+                padding: space(1);
+                color: #fff;
+                border-radius: 2px;
+                font-size: 1rem;
+                cursor: pointer;
+            }
+        }
+    }
+    .Copy {
+        background-color: $grey-color;
+        font-size: 0.70rem;
+        // text-align: center;
+        padding: space(1) space(0.6, true);
+    }
+}

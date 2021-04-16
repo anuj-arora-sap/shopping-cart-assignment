@@ -1,0 +1,17 @@
+@import '../../../styles/functions';
+
+.Logo-Container {
+    padding: space(1.2) space(0) space(0.4) space(0);
+    .Logo-Image {
+        height: 60px;
+    }
+}
+
+@media (max-width: 767px) { 
+    .Logo-Container {
+        padding: space(0.6) space(0) space(0.3) space(0);
+        .Logo-Image {
+            height: 35px;
+        }
+    }
+}
