@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import Header from '../../components/common/Header';
 import DropDown from '../../components/common/DropDown';
 import CartDetail from '../../components/organisms/CartDetail';
@@ -36,9 +36,17 @@ function Plp({productsData}) {
         setIsCartVisible(!isCartVisible);
     }
 
+    function handleChangeFilter(value) {
+        setSelectedFilter(value);
+    }
+
     function handleChangeSelect(event) {
         setSelectedFilter(event.target.value)
     }
+
+    useEffect(() => {
+        console.log('okoko', selectedFilter);
+    }, [selectedFilter])
     return (
         <div className="Plp-Container Width-Full">
             {isCartVisible && <div className="Overlay" />}
@@ -51,7 +59,7 @@ function Plp({productsData}) {
                 <div className="Product-List">
                     <div className="Product-Filter">
                         {options.map((element) => (
-                            <button key={element.label} className="Filter-Options">
+                            <button key={element.label} className="Filter-Options" onClick={() => {handleChangeFilter(element.value)}}>
                                 {element.label}
                             </button>
                         ))}

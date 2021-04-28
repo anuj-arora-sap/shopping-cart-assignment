@@ -2,7 +2,7 @@ module.exports = {
   dbConfig: {
     host: 'localhost',
     port: '27017',
-    username: 'Pragyanshu',
+    username: 'Anuj',
     password: 'Qwerty123@',
     db: 'test-Shopping-Cart'
   },
