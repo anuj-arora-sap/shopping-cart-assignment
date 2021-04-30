@@ -19,12 +19,22 @@
         .Product-Description {
             border-radius: 2px;
             height: 70px;
-            overflow-y: hidden;
+            word-break: break-word;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -moz-box-orient: vertical;
+            -ms-box-orient: vertical;
+            box-orient: vertical;
+            -webkit-line-clamp: 5;
+            -moz-line-clamp: 5;
+            -ms-line-clamp: 5;
+            line-clamp: 5;
+            overflow: hidden;
             background-color: $grey-color;
             .Des-Text{
                 padding: 0 space(0.2, true);
                 font-size: 00.70rem;
-                overflow-y: auto;
+                height: 70px;
                 text-overflow: hidden;
             }
         }
@@ -75,7 +85,7 @@
     .Product-Card {
         width: 45%;
         .Product-Name{
-            height: fit-content;
+            height: 40px;
         }
         .Product-Detail {
             display: flex;
@@ -89,8 +99,10 @@
                 }
                 .Product-Description {
                     // height: 70%;
+                    // height: 70px;
                     .Des-Text{
-                        font-size: 0.60rem;
+                        font-size: 0.70rem;
+                        // height: 70px;
                     }
                 }
             }
@@ -116,8 +128,11 @@
                 }
                 .Product-Description {
                     height: 70%;
+                    display: block;
+
                     .Des-Text{
-                        font-size: 0.80rem;
+                        height: 70%;
+                        font-size: 0.70rem;
                     }
                 }
             }
