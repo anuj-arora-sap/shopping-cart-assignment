@@ -69,6 +69,35 @@
     }
 }
 
+
+
+@media (max-width: 1023px) {
+    .Product-Card {
+        width: 45%;
+        .Product-Name{
+            height: fit-content;
+        }
+        .Product-Detail {
+            display: flex;
+            border-bottom: 1px dashed $grey-color;
+            .Product-Detail-Wrapper{
+                .Product-Price-Detail {
+                    display: none;
+                }
+                .Product-Price-With-Buy-Now {
+                    display: block;
+                }
+                .Product-Description {
+                    // height: 70%;
+                    .Des-Text{
+                        font-size: 0.60rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
 @media (max-width: 767px) {
     .Product-Card {
         width: 100%;
@@ -93,14 +122,5 @@
                 }
             }
         }
-    }
-}
-
-@media (max-width: 1023px) {
-    .Product-Card {
-        .Product-Name{
-            font-size: 0.75rem;
-        }
-
     }
 }
