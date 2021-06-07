@@ -1,0 +1,65 @@
+@import '../../../styles/colors';
+@import '../../../styles/functions';
+
+.Header-Container {
+    width: 100%;
+    box-shadow: 0 0px 10px 0px $grey-color;
+    padding: space(0) space(0.6, true);
+    // justify-content: space-between;
+    position: relative;
+    align-items: center;
+    .Links-Wrapper {
+        position: absolute;
+        left: 25.6%;
+        bottom: 15%;
+        font-size: 1rem;
+        color: $dark-grey-color;
+        font-weight: 500;
+        .Product-Link {
+            margin-left: 35%;
+        }
+    }
+    .Register-Wrapper {
+        position: absolute;
+        right: 6%;
+        top: 8%;
+        font-size: 0.80rem;
+        color: $dark-grey-color;
+        font-weight: 500;
+        width: 80px;
+        .Register-Link {
+            margin-left: space(1, true);
+        }
+    }
+   
+}
+
+@media (max-width: 767px) {
+    .Header-Container {
+        padding: space(0);
+        .Links-Wrapper {
+           display: none;
+        }
+        .Register-Wrapper {
+            display: none;
+        }
+    }
+
+}
+
+@media (max-width: 1023px) {
+    .Header-Container {
+        padding: space(0);
+        .Register-Wrapper {
+            right: 0%;
+            top: 8%;
+            font-size: 0.80rem;
+            color: $dark-grey-color;
+            font-weight: 500;
+            width: 80px;
+            .Register-Link {
+                margin-left: space(1, true);
+            }
+        }
+    }
+}

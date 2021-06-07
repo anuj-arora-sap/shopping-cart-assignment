@@ -1,0 +1,18 @@
+@import '../../../styles/functions';
+
+.Shopping-Notification.ant-notification-notice {
+    padding-left: space(1);
+    // z-index: 999;
+    .ant-notification-notice-with-icon {
+      .ant-notification-notice-message {
+        margin-left: 34px;
+      }
+      .ant-notification-notice-description {
+        margin-left: 34px;
+      }
+    }
+  
+    .Components__Notification__SpanId {
+      color: red;
+    }
+  }

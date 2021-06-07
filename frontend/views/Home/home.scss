@@ -1,0 +1,149 @@
+@import '../../styles/colors';
+@import '../../styles/functions';
+
+.Home-Main-Wrap{
+    height: 100%;
+.Home-Container {
+    &.Cart-Open {
+        display: none;
+    }
+    .Home-Data-Wrapper {
+        margin-top: space(2);
+        .Caraousel-Wrapper {
+            padding-bottom: space(1);
+              .carousel-root {
+                box-shadow: 0 49px 25px -49px $grey-color;
+                padding-bottom: space(1);
+                .carousel-slider {
+                    .control-arrow {
+                        display: none;
+                    }
+                    .carousel-status {
+                        display: none;
+                    }
+                }
+                .carousel {
+                    .thumbs-wrapper {
+                        display: none;
+                    }
+                }
+            }
+        }
+        .Categories-Wrapper {
+            display: flex;
+            flex-direction: column;
+            .Category {
+                flex: 1;
+                display: flex;
+                align-items: center;
+                padding:  space(2) space(0);
+                box-shadow: 0 60px 60px -60px $grey-color;
+
+                &.Reverse-Flex {
+                    flex-direction: row-reverse;
+                }
+                .Image-Wrapper {
+                    flex: 2;
+                    img { width: 100%;}
+                }
+                .Category-Description {
+                    flex: 3;
+                    text-align: center;
+                    .Category-Name {
+                        margin: 0px;
+                    }
+                    .Category-Des {
+                        font-size: 0.75rem;
+                    }
+                    .Explore-Button{
+                        background-color: $dark-pink-color;
+                        border: none;
+                        // width: 90px;
+                        padding: space(1);
+                        color: #fff;
+                        border-radius: 2px;
+                        // font-weight: bold;
+                        font-size: 1rem;
+                    }
+                }
+            }
+        }
+    }
+    .Copy {
+        background-color: $grey-color;
+        font-size: 0.70rem;
+        text-align: center;
+        padding: space(1) space(3);
+    }
+}
+}
+
+
+@media (min-width: 768px) {
+    .Home-Main-Wrap {
+        height: calc(100% - 32px);
+    .Home-Container {
+        &.Cart-Open {
+            display: none;
+        }
+        .Home-Data-Wrapper {
+            .Caraousel-Wrapper {
+                  .carousel-root {
+                    box-shadow: 0 60px 60px -80px $grey-color;
+                  }
+                }
+            .Categories-Wrapper {
+                .Category {
+                    box-shadow: 0 60px 50px -80px $grey-color;
+                    padding: space(0.4, true) space(0);
+
+                    .Category-Description {
+                        flex: 3;
+                        text-align: center;
+                        .Category-Name {
+                            margin: 0px;
+                            font-size: 2rem;
+                        }
+                        .Category-Des {
+                            font-size: 1.35rem;
+                        }
+                        .Explore-Button{
+                            font-size: 1.70rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+}
+
+@media (min-width: 1023px) {
+    .Home-Main-Wrap{
+        .Overlay {
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            position: fixed;
+            z-index: 2;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+    .Home-Container {
+        &.Cart-Open {
+            display: block;
+        }
+        .Home-Data-Wrapper {
+            margin-left: space(0.6, true);
+            margin-right: space(0.6, true);
+            .Categories-Wrapper {
+                display: flex;
+                flex-direction: column;
+                .Category {
+                    padding: space(2)  space(0);
+                }
+            }
+        }
+    }
+}
+}

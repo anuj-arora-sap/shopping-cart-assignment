@@ -1,0 +1,32 @@
+@import '../../../styles/colors';
+@import '../../../styles/functions';
+
+.Input-Wrap {
+    display: flex;
+    flex-direction: column-reverse;
+    .Error-Text {
+        color: red;
+        font-size: 0.80rem;
+        margin-top: 5px;
+    }
+    .Input-Label {
+        color: gray;
+        font-size: 0.85rem;
+        padding-bottom: space(0.7);
+        display: none;
+    }
+    .Input {
+        outline: none;
+        border: none;
+        padding-bottom: space(1);
+        border-bottom: .1rem solid gray;
+        &:focus {
+            border-bottom: .1rem solid $dark-blue-color;
+            +.Input-Label {
+                color: $dark-blue-color;
+                display: block;
+            }
+         
+        }
+      }
+}

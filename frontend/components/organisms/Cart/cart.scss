@@ -1,0 +1,44 @@
+@import '../../../styles/colors';
+@import '../../../styles/functions';
+
+.Cart {
+    padding: space(1);
+    background-color: $grey-color;
+    // margin-top: 40px;
+    position: absolute;
+    cursor: pointer;
+    right: 6%;
+    align-items: center;
+    bottom: 0px;
+    border-radius: 1px;
+    .Image-Wrapper {
+        svg {
+            height: 20px;
+            width: 20px;
+            fill: $dark-pink-color;
+        }
+    }
+    .Cart-Text {
+        font-size: 1rem;
+        margin-left: 6px;
+    }
+}
+
+@media (max-width: 767px) { 
+    .Cart {
+        padding: space(1) space(2) space(1) space(1);
+        right: 0px;
+        .Image-Wrapper {
+            svg {
+            height: 25px;
+            width: 25px;
+            }
+        }
+    }
+}
+
+@media (max-width: 1023px) {
+    .Cart {
+        right: 0px;
+    }
+}

@@ -1,0 +1,94 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  font-size: 14px;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+#__next {
+  height: 100%;
+}
+#__next > div:first-child{
+  height: 100%; // or min-height
+}
+
+.Width-Full {
+  width: 100%;
+}
+
+.Flex {
+  display: flex;
+}
+
+.Flex-Col {
+  flex-direction: column;
+}
+
+.Flex-Wrap {
+  flex-wrap: wrap;
+}
+.Mt-10 {
+  margin-top: 10px;
+}
+
+.Ml-10 {
+  margin-left: 10px;
+}
+
+.Font-Size-12 {
+  font-size: 12px;
+}
+
+.Font-Size-10 {
+  font-size: 0.70rem;
+}
+
+.Font-Size-14 {
+  font-size: 1rem;
+}
+
+.ant-notification {
+  width: 300px;
+  margin-right: 40px; 
+}
+
+.ant-notification-notice-icon svg {
+  vertical-align: middle;
+}
+
+.ant-notification .success {
+  .ant-notification-notice-with-icon .ant-notification-notice-message {
+    color: green;
+  }
+}
+
+.ant-notification-notice-with-icon .ant-notification-notice-message {
+  font-size: 1rem;
+  color: red;
+  font-weight: bold;
+}
+
+.ant-notification-notice-with-icon .ant-notification-notice-description {
+  
+  margin-right: 20px; 
+}
+
+.Font-WB {
+  font-weight: bold;
+}
+
+.Mt-20 {
+  margin-top: 20px;
+}

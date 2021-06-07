@@ -1,0 +1,141 @@
+@import '../../../styles/colors';
+@import '../../../styles/functions';
+
+.Product-Card {
+    width: 22%;
+    .Product-Name {
+        height: 40px;
+        font-size: 1rem;
+    }
+    .Product-Detail {
+        box-shadow: 0 1px 2px 0px $grey-color;
+        .Product-Image {
+            img{width: 100%;}
+            flex: 1;
+        }
+        .Product-Detail-Wrapper{
+            margin: 0 5%;
+            flex: 1;
+        .Product-Description {
+            border-radius: 2px;
+            height: 70px;
+            word-break: break-word;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -moz-box-orient: vertical;
+            -ms-box-orient: vertical;
+            box-orient: vertical;
+            -webkit-line-clamp: 5;
+            -moz-line-clamp: 5;
+            -ms-line-clamp: 5;
+            line-clamp: 5;
+            overflow: hidden;
+            background-color: $grey-color;
+            .Des-Text{
+                padding: 0 space(0.2, true);
+                font-size: 00.70rem;
+                height: 70px;
+                text-overflow: hidden;
+            }
+        }
+        .Product-Price-Detail{
+            margin: 10px 0px;
+            justify-content: space-between;
+            align-items: center;
+            
+            .Product-Price {
+                font-size: 0.75rem;
+            }
+            .Buy-Now {
+                background-color: $dark-pink-color;
+                border: none;
+                width: 90px;
+                padding: space(0.8) space(1);
+                color: #fff;
+                border-radius: 2px;
+                font-weight: bold;
+                font-size: 0.75rem;
+                cursor: pointer;
+            }
+        }
+        .Product-Price-With-Buy-Now {
+            display: none;
+            margin: 10px 0px ;
+            cursor: pointer;
+            width: 100%;
+            .Buy-Now {
+                background-color: $dark-pink-color;
+                border: none;
+                // height: 30px;
+                width: 100%;
+                padding: space(0.8) space(1);
+                // width: 50px;
+                color: #fff;
+                border-radius: 2px;
+                font-size: 0.80rem;
+            }
+        }
+    }
+    }
+}
+
+
+
+@media (max-width: 1023px) {
+    .Product-Card {
+        width: 45%;
+        .Product-Name{
+            height: 40px;
+        }
+        .Product-Detail {
+            display: flex;
+            border-bottom: 1px dashed $grey-color;
+            .Product-Detail-Wrapper{
+                .Product-Price-Detail {
+                    display: none;
+                }
+                .Product-Price-With-Buy-Now {
+                    display: block;
+                }
+                .Product-Description {
+                    // height: 70%;
+                    // height: 70px;
+                    .Des-Text{
+                        font-size: 0.70rem;
+                        // height: 70px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .Product-Card {
+        width: 100%;
+        .Product-Name{
+            height: fit-content;
+        }
+        .Product-Detail {
+            display: flex;
+            border-bottom: 1px dashed $grey-color;
+            .Product-Detail-Wrapper{
+                .Product-Price-Detail {
+                    display: none;
+                }
+                .Product-Price-With-Buy-Now {
+                    display: block;
+                }
+                .Product-Description {
+                    height: 70%;
+                    display: block;
+
+                    .Des-Text{
+                        height: 70%;
+                        font-size: 0.70rem;
+                    }
+                }
+            }
+        }
+    }
+}
